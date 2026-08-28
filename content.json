@@ -1,0 +1,556 @@
+{
+  "meta": {
+    "eyebrow": "SANMAN · a decision simulation",
+    "title": "TWENTY",
+    "title2": "TWO YEARS",
+    "motif": "There is one person you won’t meet while building this house.",
+    "intro1": "You are building a single-storey house on a 30 × 40 ft site — about 1,200 sq ft — on the edge of the city, where there is no municipal sewer connection.",
+    "intro2": "Your construction budget is around ₹20 lakh. You will make eight decisions. None of them looks like a decision about a sanitation worker.",
+    "intro3": "Since your area has no underground sewage line yet, one day someone will have to empty the septic tank you build.",
+    "question": "What choices would you make — weighing cost, space, and what’s normally done?",
+    "footnote": "~6 minutes · Based on field interviews with homeowners, masons, contractors, engineers and architects in Karnataka and Tamil Nadu.",
+    "cta": "Start building",
+    "banner": null
+  },
+  "howto": {
+    "title": "How to play",
+    "lines": [
+      "This isn’t a test. It’s a way to see how everyday building choices — made long before anyone opens a tank — shape how safe and dignified that worker’s job will be.",
+      "Every choice costs something — but money isn’t the only thing that matters.",
+      "Make the decision you would actually make."
+    ],
+    "cta": "Begin"
+  },
+  "budget": {
+    "total": 2000000,
+    "base": 1100000,
+    "label": "House budget"
+  },
+  "stages": [
+    {
+      "title": "How will you organise the build?",
+      "prompt": "You have to decide who will run the construction day to day. You can still bring in specialists when you need them. The question is: who holds the project together?",
+      "reallyAbout": "Who notices when nobody has thought through the septic tank?",
+      "why": null,
+      "options": [
+        {
+          "key": "A",
+          "label": "You + the maestri",
+          "cost": 420000,
+          "costNote": "₹35,000 × 12 chedras for a 30×40 site (each chedra is 10×10 ft) = ₹4,20,000 labour · you buy the materials",
+          "today": "You stay closely involved and avoid consultant fees.",
+          "later": "More decisions stay between you and the person building the house.",
+          "img": null,
+          "eff": {
+            "acc": 0
+          }
+        },
+        {
+          "key": "B",
+          "label": "Contractor-managed",
+          "cost": 620000,
+          "costNote": "Labour + 7–15% management of the whole build · ≈₹6.2L committed",
+          "today": "One person coordinates most of the work.",
+          "later": "You have less control over the small, day-to-day decisions.",
+          "img": null,
+          "eff": {
+            "acc": 1
+          }
+        },
+        {
+          "key": "C",
+          "label": "Architect or engineer-led build",
+          "cost": 670000,
+          "costNote": "Labour + 5–20% design & coordination · ≈₹6.7L committed",
+          "today": "More decisions are documented before construction.",
+          "later": "More professional fees, and more time before work starts.",
+          "img": null,
+          "eff": {
+            "acc": 2
+          }
+        }
+      ]
+    },
+    {
+      "title": "Where will the septic tank go?",
+      "prompt": "The vastu consultant has a fixed spot in mind. Your family wants it away from the kitchen and the children’s play area. And you still have to weigh the slope, the borewell, and how the tanker or hose that empties it will one day reach it.",
+      "reallyAbout": "Can the person who has to empty the tank actually reach it?",
+      "why": null,
+      "options": [
+        {
+          "key": "A",
+          "label": "In the corner the vastu consultant fixed",
+          "cost": 0,
+          "costNote": null,
+          "today": "It follows the vastu placement your family wants.",
+          "later": "But it leaves only a narrow gap to the compound wall, so nothing can drive in, and the ground slopes back toward the house.",
+          "img": null,
+          "eff": {
+            "a": 0
+          }
+        },
+        {
+          "key": "B",
+          "label": "Behind the house, out of sight",
+          "cost": 0,
+          "costNote": null,
+          "today": "Hidden and away from where the children play.",
+          "later": "But it sits against the kitchen wall, and only a hose can reach it from the gate — a truck cannot.",
+          "img": null,
+          "eff": {
+            "a": 1
+          }
+        },
+        {
+          "key": "C",
+          "label": "Near the gate, where a truck can reach",
+          "cost": 0,
+          "costNote": null,
+          "today": "You give up some space near the gate or parking.",
+          "later": "But a truck can reach it, and water drains away from the house, not toward it.",
+          "img": null,
+          "eff": {
+            "a": 2
+          }
+        }
+      ]
+    },
+    {
+      "title": "What will you build underground?",
+      "prompt": "The mason lays out a few options.",
+      "reallyAbout": "What happens to the waste before someone has to remove it?",
+      "why": "Septic-tank sizing depends on the number of users, wastewater flow and how often it is cleaned; the design should be worked out, not chosen by shape or price. CPHEEO on-site sanitation guidance refers to IS 2470 for this.",
+      "options": [
+        {
+          "key": "A",
+          "label": "Precast concrete rings",
+          "cost": 12000,
+          "costNote": null,
+          "today": "The cheapest, and done quickly.",
+          "later": "But the rings can crack and crumble over the years, and how they are joined and sealed is left to the site.",
+          "img": null,
+          "eff": {
+            "m": 0,
+            "e": 0
+          }
+        },
+        {
+          "key": "B",
+          "label": "Stone-lined well",
+          "cost": 18000,
+          "costNote": null,
+          "today": "More labour than rings, and slower to build.",
+          "later": "Durable — it does not crumble the way rings can. But it is a single chamber, so solids and liquid still mix.",
+          "img": null,
+          "eff": {
+            "m": 1,
+            "e": 1
+          }
+        },
+        {
+          "key": "C",
+          "label": "Brick-lined tank",
+          "cost": 24000,
+          "costNote": null,
+          "today": "A familiar method at a middle price.",
+          "later": "Watertight if the plaster is done well, but one chamber only — limited separation of solids and liquid.",
+          "img": null,
+          "eff": {
+            "m": 1,
+            "e": 0
+          }
+        },
+        {
+          "key": "D",
+          "label": "Two-compartment baffled tank",
+          "cost": 36000,
+          "costNote": null,
+          "today": "The most you will spend underground.",
+          "later": "Better separation, and a design that can be maintained more predictably.",
+          "img": null,
+          "eff": {
+            "m": 2,
+            "e": 1
+          }
+        }
+      ]
+    },
+    {
+      "title": "What will the person doing the maintenance be able to reach?",
+      "prompt": "The compound is nearly finished. The tiler asks how you want the septic-tank openings finished.",
+      "reallyAbout": "Are you designing the tank for the person who lives here — or the person who will eventually open it?",
+      "why": "IS 2470-based guidance calls for access openings over the septic-tank chambers, with covers that can be removed.",
+      "options": [
+        {
+          "key": "A",
+          "label": "Hide everything under a flush slab",
+          "cost": 1000,
+          "costNote": null,
+          "today": "The cleanest-looking finish.",
+          "later": "But opening the tank later means breaking into the finished surface.",
+          "img": null,
+          "eff": {
+            "a": 0,
+            "m": 0,
+            "e": 0
+          }
+        },
+        {
+          "key": "B",
+          "label": "One small inspection opening",
+          "cost": 500,
+          "costNote": null,
+          "today": "Most people’s choice: a PVC pipe with a cap, on the assumption the truck’s hose can just drop in and pull the liquid out.",
+          "later": "Almost free — but the cap often gets left off or snaps over the years, and nothing bigger than a hose will ever fit.",
+          "img": null,
+          "eff": {
+            "a": 1,
+            "m": 1,
+            "e": 1
+          }
+        },
+        {
+          "key": "C",
+          "label": "Accessible openings over each chamber",
+          "cost": 1800,
+          "costNote": null,
+          "today": "A removable cover on each chamber, in a material that stands up to the gases and the sun yet is still light enough to lift by hand.",
+          "later": "It stays visible in the compound — but the tank can be opened and cleared without breaking anything.",
+          "img": null,
+          "eff": {
+            "a": 2,
+            "m": 2,
+            "e": 2
+          }
+        }
+      ]
+    },
+    {
+      "title": "The tank needs air. Where will it go?",
+      "prompt": "The tank produces gases as waste breaks down. Your builder says nobody wants a pipe sticking up, and offers to hide it.",
+      "reallyAbout": "Where do the gases go when someone opens the tank?",
+      "why": "IS 2470-based guidance calls for a vent with a mesh cap; the height it needs depends on how close the tank is to the house and neighbours.",
+      "options": [
+        {
+          "key": "A",
+          "label": "No vent",
+          "cost": 0,
+          "costNote": null,
+          "today": "Nothing to see.",
+          "later": "But the gases have no controlled way out of the tank.",
+          "img": null,
+          "eff": {
+            "e": 0
+          }
+        },
+        {
+          "key": "B",
+          "label": "Short hidden vent",
+          "cost": 500,
+          "costNote": null,
+          "today": "The elevation stays clean.",
+          "later": "But the vent may not clear the height needed to keep gases away from people.",
+          "img": null,
+          "eff": {
+            "e": 1
+          }
+        },
+        {
+          "key": "C",
+          "label": "Properly positioned vent with a mesh cap",
+          "cost": 5000,
+          "costNote": null,
+          "today": "One more visible pipe to fit in.",
+          "later": "But the tank has a proper way to breathe.",
+          "img": null,
+          "eff": {
+            "e": 2
+          }
+        }
+      ]
+    },
+    {
+      "title": "Where will the water go after the tank?",
+      "prompt": "The septic tank is not the end of the system. The water that flows out of the tank has to go somewhere.",
+      "reallyAbout": "Where does the water go after it leaves the tank?",
+      "why": "CPHEEO guidance lists soak pits and dispersion trenches as ways to let the outflow soak into the ground, depending on the soil and groundwater.",
+      "options": [
+        {
+          "key": "A",
+          "label": "Connect it to the storm drain",
+          "cost": 1000,
+          "costNote": null,
+          "today": "Cheap, simple, and what everyone nearby seems to do.",
+          "later": "But wastewater leaves the property through a drain meant for rainwater.",
+          "img": null,
+          "eff": {
+            "m": 0
+          }
+        },
+        {
+          "key": "B",
+          "label": "Soak pit with a stone-filled base",
+          "cost": 0,
+          "costNote": null,
+          "today": "A conventional on-site solution.",
+          "later": "How well it works depends on the soil and the groundwater.",
+          "img": null,
+          "eff": {
+            "m": 1
+          }
+        },
+        {
+          "key": "C",
+          "label": "Dispersion trench",
+          "cost": 2000,
+          "costNote": null,
+          "today": "More land taken and more construction.",
+          "later": "But the water spreads over a larger area to soak into the ground.",
+          "img": null,
+          "eff": {
+            "m": 2
+          }
+        }
+      ]
+    },
+    {
+      "title": "How much detail goes on the drawing?",
+      "prompt": "The plan shows the septic tank only as a rectangle marked ‘ST’. How it is actually built — the size, the chambers, the outlet — otherwise lives in the builder’s memory.",
+      "reallyAbout": "If something is wrong twenty-two years later, is there a design decision anyone can point back to?",
+      "why": "Professional roles, registration and approval requirements vary by state and by building type; this game does not assume one single ‘seal’ rule across Karnataka and Tamil Nadu.",
+      "options": [
+        {
+          "key": "A",
+          "label": "Leave it as the ‘ST’ rectangle",
+          "cost": 0,
+          "costNote": null,
+          "today": "No fee, no delay.",
+          "later": "But the details stay in someone’s memory.",
+          "img": null,
+          "eff": {
+            "acc": 0
+          }
+        },
+        {
+          "key": "B",
+          "label": "Put the tank’s details on the drawing",
+          "cost": 0,
+          "costNote": null,
+          "today": "It costs nothing but the intent to insist on it.",
+          "later": "Its size, base and outlet get written down, so someone can refer back to what was intended.",
+          "img": null,
+          "eff": {
+            "acc": 1
+          }
+        }
+      ]
+    },
+    {
+      "title": "The occupancy certificate",
+      "prompt": "The house is finished. Under recent Bengaluru relaxations, a plot this size can get its electricity and water connections without an Occupancy Certificate — so you could just move in. The OC means another inspection against the sanctioned plan, and a wait.",
+      "reallyAbout": "Does anyone inspect what was built before everyone moves on?",
+      "why": "A recent Karnataka/Bengaluru relaxation lets small residential plots (up to about 2,400 sq ft) get utility connections without an OC. But the Supreme Court has held that utility providers should not give permanent connections to buildings without a valid OC or Completion Certificate. Rules vary by state and change over time.",
+      "options": [
+        {
+          "key": "A",
+          "label": "Move in without the OC",
+          "cost": 0,
+          "costNote": null,
+          "today": "You can get the utility connections now, so the keys are yours today.",
+          "later": "But the OC is what banks, resale buyers and the Khata all ask for later — and the exemption is a local relaxation, not a pass on the building rules.",
+          "img": null,
+          "eff": {
+            "acc": 0
+          }
+        },
+        {
+          "key": "B",
+          "label": "Get the occupancy certificate",
+          "cost": 65000,
+          "costNote": "₹50,000–₹80,000 in fees — more if deviations have to be ‘regularised’",
+          "today": "Another inspection and a wait.",
+          "later": "The building is checked against the sanctioned plan — clearer title, easier loans and resale, and one more set of eyes before everyone moves on.",
+          "img": null,
+          "eff": {
+            "acc": 2
+          }
+        }
+      ]
+    }
+  ],
+  "years": {
+    "items": [
+      [
+        "Year 1",
+        "You move in. Everything is new, and nobody gives the septic tank a thought."
+      ],
+      [
+        "Year 3",
+        "The first smell appears after heavy rain."
+      ],
+      [
+        "Year 7",
+        "The bathrooms are retiled."
+      ],
+      [
+        "Year 11",
+        "Your daughter’s wedding fills the house."
+      ],
+      [
+        "Year 16",
+        "The septic tank needs emptying for the first time. You get a basic suction done by an operator."
+      ],
+      [
+        "Year 22",
+        "The downstairs toilet backs up."
+      ]
+    ],
+    "arrivalSafe": "The operator who comes to empty the tank backs the truck up to the covers and gets to work.",
+    "arrivalBad": "The operator who comes to empty the tank looks at the tank. He looks at the access. He looks at the truck.",
+    "quote": "How am I supposed to do this?",
+    "cta": "See what you built",
+    "banner": null
+  },
+  "reveal": {
+    "header1": "Someone will have to maintain what you built.",
+    "header2": "The only question is how safe that work will be.",
+    "states": {
+      "safe": {
+        "tag": "SAFE TO MAINTAIN",
+        "body": "The tank can be reached without breaking anything — a clear way in, a vent, and somewhere for the water to go. The worker never has to go inside.",
+        "headline": "You thought it through.",
+        "sub": "Not by spending the most — by weighing cost, space and the norms, and still leaving the maintenance job safe to do. That was the decision all along."
+      },
+      "difficult": {
+        "tag": "DIFFICULT TO MAINTAIN",
+        "body": "The worker can finish the job, but the tank is awkward to reach, poorly recorded, or hard to open. The system has quietly pushed the risk onto the person doing the work.",
+        "headline": "You didn’t lose.",
+        "sub": "But you left someone else to absorb the cost of your decisions."
+      },
+      "unsafe": {
+        "tag": "UNSAFE TO MAINTAIN",
+        "body": "Between the access, the design, the ventilation and the location, there is no safe way to empty this tank. The worker is pushed to improvise.",
+        "headline": "This is where the system breaks.",
+        "sub": "Not at the septic tank — at the point where someone’s job becomes more dangerous than the house owner’s problem."
+      }
+    },
+    "worker": {
+      "safe": "The operator brings the truck to the opening, lifts the covers, and runs the suction line into the tank from outside. Half an hour, and he is gone. He never has to put any part of himself into the tank.",
+      "difficult": "The operator gets it done, but not easily — reaching the tank, working through a narrow opening, clearing what the design let settle. He improvises. It takes longer than it should, and some of the risk the house avoided has quietly become his.",
+      "unsafe": "There is no way to empty this tank from outside it. The operator opens the finished surface, works through whatever gap he can make, and lowers himself in to the waist to shift the settled sludge by hand.",
+      "chronic": "He isn’t injured today. But the skin on his legs and arms will not be right again, and in a few years there will be a cough that never quite clears — and nothing will be written down as connected to this.",
+      "escalate": "And where a tank has sat closed and unvented for years, what is inside is not mostly air. There is no warning — a worker is overcome before he can call out, and the one who climbs in after him often does not come out either. Every year, across the country, this is how sanitation workers die. Nothing here names a single cause — the danger was built in long ago, by ordinary decisions, and no one was ever responsible for catching it."
+    },
+    "imgSafe": null,
+    "imgDifficult": null,
+    "imgUnsafe": null,
+    "whyTitle": "WHY",
+    "whyNote": "Four things decided the job. No single choice set them — combinations did.",
+    "thoughtTitle": "WHAT YOU THOUGHT YOU WERE DECIDING",
+    "thoughtRows": [
+      [
+        "How will I organise the build?",
+        "Who ends up accountable for the septic tank?"
+      ],
+      [
+        "Where will it look and sit right?",
+        "Can the person emptying it actually reach it?"
+      ],
+      [
+        "Which tank is cheapest or sturdiest?",
+        "How the waste behaves before someone removes it"
+      ],
+      [
+        "How should I finish the compound?",
+        "Can the tank be opened without breaking things?"
+      ],
+      [
+        "Should I bother with a vent pipe?",
+        "Where the gases go when it’s opened"
+      ],
+      [
+        "Where should the outlet go?",
+        "Where the water ends up"
+      ],
+      [
+        "How much detail on the drawing?",
+        "Whether there’s a record anyone can point back to"
+      ],
+      [
+        "Do I need the OC?",
+        "Whether anyone checked what was actually built"
+      ]
+    ],
+    "trailTitle": "YOUR DECISION TRAIL",
+    "ventSkippedNote": "Not applicable — no accessible opening was made, so there was no real vent to decide.",
+    "matteredTitle": "THE DECISIONS THAT MATTERED MOST",
+    "matteredDims": [
+      [
+        "Access",
+        "What the worker could physically reach."
+      ],
+      [
+        "Maintainability",
+        "Whether the system could be emptied without dangerous improvising."
+      ],
+      [
+        "Accountability",
+        "Whether anyone was responsible for designing and checking the system."
+      ]
+    ],
+    "didRightTitle": "WHAT YOU DID RIGHT",
+    "didRight": [
+      [
+        "You designed for the future.",
+        "You thought about the person who would maintain the system, not only the people who would live in the house."
+      ],
+      [
+        "You accepted a visible trade-off.",
+        "You gave up some money, space or neatness to make maintenance possible."
+      ],
+      [
+        "You created accountability.",
+        "Someone had to think about the sanitation system before it disappeared underground."
+      ]
+    ],
+    "brokeTitle": "WHERE THE SYSTEM BROKE",
+    "brokeIntro": "The homeowner was not the only actor. Each one made a reasonable decision within what they could see.",
+    "chain": [
+      [
+        "HOMEOWNER",
+        "decides what matters"
+      ],
+      [
+        "DESIGNER / ENGINEER",
+        "turns those decisions into drawings"
+      ],
+      [
+        "BUILDER / MAESTRI",
+        "turns drawings into a real tank"
+      ],
+      [
+        "APPROVAL / INSPECTION",
+        "may or may not see the sanitation details"
+      ],
+      [
+        "FUTURE HOUSEHOLD",
+        "forgets what was built"
+      ],
+      [
+        "THE OPERATOR",
+        "inherits the physical reality"
+      ]
+    ],
+    "finalTitle": "Who was this house designed for?",
+    "finalBody": "The family who lived in it? Or the worker who would one day have to maintain it?",
+    "motifPayoff": "The worker was never in the room when these decisions were made. But the consequences were. This was the person your decisions were designing for.",
+    "guidedLabel": "How a lot of us build — without weighing the consequences",
+    "guidedBanner": "A walkthrough: only the choice most of us actually make is open at each step.",
+    "oped": {
+      "label": "Read the field note",
+      "url": "",
+      "note": "A longer piece on the people upstream of the tank — where these choices are really made, and how they might be caught."
+    },
+    "credits": "SANMAN · eGov Foundation. Composite scenario from field interviews in Karnataka and Tamil Nadu. Sanitation-engineering references: CPHEEO on-site sanitation guidance and IS 2470. Professional-role and approval requirements vary by jurisdiction and are pending expert validation."
+  }
+}
